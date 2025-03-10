@@ -25,6 +25,7 @@
 		"@tailwindcss/vite": "^4.0.0",
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.4",
+		"@types/js-yaml": "^4.0.9",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-svelte": "^3.0.0",
@@ -33,7 +34,7 @@
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
-		"svelte": "^5.0.0",
+		"svelte": "^5.22.6",
 		"svelte-check": "^4.0.0",
 		"tailwindcss": "^4.0.0",
 		"typescript": "^5.0.0",
@@ -47,6 +48,8 @@
 		]
 	},
 	"dependencies": {
+		"fs": "0.0.1-security",
+		"js-yaml": "^4.1.0",
 		"mode-watcher": "^0.5.1"
 	}
 }

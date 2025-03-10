@@ -1,2 +1,140 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@font-face {
+    font-family: 'minecraft';
+    src: url('/fonts/MinecraftRegular-Bmg3.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'minecraft';
+    src: url('/fonts/MinecraftBold-nMK1.otf') format('opentype');
+    font-weight: 600;
+    font-style: bold;
+}
+
+@theme {
+    --font-family-monospace: 'minecraft', monospace;
+  
+    --color-white: #e4f8fd;
+    --color-offwhite: #c5dae1;
+    --blue: #7592f1;
+    --lightblue: #7592f1;
+    --gray: #1f2836;
+    --dark-gray: #141823;
+    --color-dark-blue: #2f3b5e;
+    --background: var(--color-dark-blue)
+  }
+  
+@layer theme {
+    .dark {
+        --background: var(--color-offwhite);
+    }
+}
+
+  :root {    
+    --color-text: var(--dark-gray);
+
+    --background: var(--white);
+    --background-dimmed: var(--offwhite);
+}
+
+
+.dark {    
+    --color-text: var(--white);
+    --background: #2f3b5e;
+    --background-dimmed: var(--dark-gray);
+}
+
+
+@layer base {
+    .bg-checker{
+        --checker-size: 20px;
+        --checker-color: #0002;
+        
+        background-image: linear-gradient(45deg, var(--checker-color) 25%, transparent 25%), linear-gradient(-45deg, var(--checker-color) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, var(--checker-color) 75%), linear-gradient(-45deg, transparent 75%, var(--checker-color) 75%);
+        background-size: var(--checker-size) var(--checker-size);
+        background-position: 0 0, 0 calc(var(--checker-size)/2), calc(var(--checker-size)/2) calc(var(--checker-size)/-2), calc(var(--checker-size)/-2) 0px;
+    }
+    .pixel-top {
+        clip-path: polygon(
+          0px 100%,
+          100% 100%,
+          100% 4px,
+          calc(100% - 4px) 4px,
+          calc(100% - 4px) 0px,
+          4px 0px,
+          4px 4px,
+          0px 4px
+        );
+    }
+    .pixel-corners {
+        clip-path: polygon(
+          0px calc(100% - 4px),
+          4px calc(100% - 4px),
+          4px 100%,
+          calc(100% - 4px) 100%,
+          calc(100% - 4px) calc(100% - 4px),
+          100% calc(100% - 4px),
+          100% 4px,
+          calc(100% - 4px) 4px,
+          calc(100% - 4px) 0px,
+          4px 0px,
+          4px 4px,
+          0px 4px
+        );
+    }
+    :root {    
+        --color-text: var(--dark-gray);
+    
+        --background: var(--white);
+        --background-dimmed: var(--offwhite);
+    }
+    
+    .dark {    
+        --color-text: var(--white);
+        --background: #2f3b5e;
+        --background-dimmed: var(--dark-gray);
+    }
+    
+    a:not(.no-default-link) {
+        color: #7695EC;
+        /* Not sure if underlined links is desired or not. */
+        /* text-decoration: underline; */
+    }
+    
+    a:not(.no-default-link):hover {
+        color: #617ac1;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #fff;
+    }
+    
+    .title-shadow {
+        text-shadow:
+            4px 4px var(--gray),
+            4px -4px var(--gray),
+            -4px 4px var(--gray),
+            -4px -4px var(--gray),
+            0px 4px var(--gray),
+            0px -4px var(--gray),
+            4px 0px var(--gray),
+            -4px 0px var(--gray);
+    }
+    
+    .subtitle-shadow {
+        text-shadow: 2px 2px var(--gray);
+    }
+    
+      
+}
+
+

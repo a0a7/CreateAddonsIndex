@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      fs:
+        specifier: 0.0.1-security
+        version: 0.0.1-security
+      js-yaml:
+        specifier: ^4.1.0
+        version: 4.1.0
       mode-watcher:
         specifier: ^0.5.1
         version: 0.5.1(svelte@5.22.6)
@@ -39,6 +45,9 @@ importers:
       '@testing-library/svelte':
         specifier: ^5.2.4
         version: 5.2.7(svelte@5.22.6)(vite@6.2.1(jiti@2.4.2)(lightningcss@1.29.2))(vitest@3.0.8(jiti@2.4.2)(jsdom@26.0.0)(lightningcss@1.29.2))
+      '@types/js-yaml':
+        specifier: ^4.0.9
+        version: 4.0.9
       eslint:
         specifier: ^9.18.0
         version: 9.22.0(jiti@2.4.2)
@@ -64,7 +73,7 @@ importers:
         specifier: ^0.6.11
         version: 0.6.11(prettier-plugin-svelte@3.3.3(prettier@3.5.3)(svelte@5.22.6))(prettier@3.5.3)
       svelte:
-        specifier: ^5.0.0
+        specifier: ^5.22.6
         version: 5.22.6
       svelte-check:
         specifier: ^4.0.0
@@ -1078,6 +1087,9 @@ packages:
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
+  '@types/js-yaml@4.0.9':
+    resolution: {integrity: sha512-k4MGaQl5TGo/iipqb2UDG2UwjXziSWkh0uysQelTlJpX1qGlpUZYm8PnO4DxG1qBomtJUdYJ6qR6xdIah10JLg==}
+
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
@@ -1553,6 +1565,9 @@ packages:
   form-data@4.0.2:
     resolution: {integrity: sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==}
     engines: {node: '>= 6'}
+
+  fs@0.0.1-security:
+    resolution: {integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==}
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -3182,6 +3197,8 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
+  '@types/js-yaml@4.0.9': {}
+
   '@types/json-schema@7.0.15': {}
 
   '@typescript-eslint/eslint-plugin@8.26.0(@typescript-eslint/parser@8.26.0(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)':
@@ -3747,6 +3764,8 @@ snapshots:
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
       mime-types: 2.1.35
+
+  fs@0.0.1-security: {}
 
   fsevents@2.3.3:
     optional: true

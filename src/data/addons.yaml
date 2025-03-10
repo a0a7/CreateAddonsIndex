@@ -1,0 +1,28 @@
+- name: "Cool Addon"
+  developers: "Alice, Bob"
+  logo: "/images/cool-addon-logo.png"
+  thumbnail: "/images/cool-addon-thumb.png"
+  description: "This addon does cool things and enhances your Create experience."
+  modrinth: "https://modrinth.com/addon/cool-addon"
+  curseforge: "https://curseforge.com/minecraft/addon/cool-addon"
+  github: "https://github.com/cool-addon"
+  fabric_versions:
+    - "0.11.3"
+    - "0.12.2"
+  forge_versions:
+    - "1.16.5"
+    - "1.17.1"
+
+- name: "Another Addon"
+  developers: "Charlie"
+  logo: "/images/another-addon-logo.png"
+  thumbnail: "/images/another-addon-thumb.png"
+  description: "This addon provides an alternative experience for your builds."
+  modrinth: "https://modrinth.com/addon/another-addon"
+  curseforge: "https://curseforge.com/minecraft/addon/another-addon"
+  github: "https://github.com/another-addon"
+  fabric_versions:
+    - "0.8.2"
+    - "0.9.4"
+  forge_versions:
+    - "1.15.2"
