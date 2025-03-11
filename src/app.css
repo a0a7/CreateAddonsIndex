@@ -38,7 +38,7 @@
 }
 
   :root {    
-    --color-text: var(--dark-gray);
+    --color-text: #2f3b5e;
 
     --background: var(--white);
     --background-dimmed: var(--offwhite);
@@ -90,7 +90,7 @@
         );
     }
     :root {    
-        --color-text: var(--dark-gray);
+        --color-text: #2f3b5e;
     
         --background: var(--white);
         --background-dimmed: var(--offwhite);

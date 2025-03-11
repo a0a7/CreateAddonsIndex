@@ -1,10 +1,7 @@
 <script lang="ts">
-  import { toggleMode } from "mode-watcher";
-  import { fly } from "svelte/transition";
   export let data: { addons: any[] };
   const { addons } = data;
 
-  // helper to calculate combined downloads
   function totalDownloads(addon: { modrinth_info: { downloads: any; }; curseforge_info: { downloadCount: any; }; }) {
     const modrinthDownloads = addon.modrinth_info && addon.modrinth_info.downloads ? addon.modrinth_info.downloads : 0;
     const cfDownloads = addon.curseforge_info && addon.curseforge_info.downloadCount ? addon.curseforge_info.downloadCount : 0;
@@ -47,7 +44,6 @@
 </svelte:head>
 
 <main class="bg-(--background) flex flex-col font-(family-name:--font-family-monospace)">
-  <button on:click={toggleMode}>Toggle Mode</button>
   <div class="md:h-[20vh]">
     <div class="relative z-0 w-full">
       <div class="w-full left-0 text-center px-10 py-6 flex flex-col justify-center">
@@ -76,8 +72,10 @@
                   <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/be/Grass_Block_%28top_texture%29_JE4_BE2.png/revision/latest?cb=20230704210148" alt="Placeholder Logo" class="w-16 h-16 mb-4" />
                 {/if}
               </div>      
-              <div class="overflow-hidden whitespace-nowrap w-full inline-block text-xl font-bold">
-                  {addon.name}
+              <div class=" whitespace-nowrap w-full inline-block text-xl font-bold">
+                  <div class="truncate">
+                    {addon.name}
+                  </div>
                   <div class="flex flex-wrap gap-1 mt-1">
                     {#if addon.modrinth_info && addon.modrinth_info.game_versions}
                       <span class="bg-black/[.15] text-black dark:invert text-xs px-[6px] py-1 pixel-corners">
@@ -88,18 +86,20 @@
                   {/if}
                     {#if addon.modrinth_info && addon.modrinth_info.loaders}
                     {#if addon.modrinth_info.loaders.includes("fabric")}
-                      <span class="bg-blue-100 text-blue-800 text-xs px-[6px] py-1 pixel-corners">
-                        <img src="icons/fabric.svg" class="w-4 h-4 inline-block dark:invert transform scale-x-[1.1]" alt="Fabric" />
+                      <span class="text-xs px-[6px] py-1 pixel-corners">
+                        <img src="icons/fabric.svg" class="invert w-4 h-4 inline-block  transform scale-x-[1.1]" alt="" />
                         Fabric
                       </span>
                     {/if}
                     {#if addon.modrinth_info.loaders.includes("forge")}
-                      <span class="bg-yellow-100 text-yellow-800 text-xs px-[6px] py-1 pixel-corners">
+                      <span class="text-xs px-[6px] py-1 pixel-corners">
+                        <img src="icons/forge.svg" class="invert w-4 h-4 inline-block  transform scale-x-[1.1]" alt="" />
                         Forge
                       </span>
                     {/if}
                     {#if addon.modrinth_info.loaders.includes("datapack")}
-                      <span class="bg-gray-100 text-gray-800 text-xs px-[6px] py-1 pixel-corners">
+                      <span class="text-xs px-[6px] py-1 pixel-corners">
+                        <img src="icons/datapack.svg" class="invert w-4 h-4 inline-block transform scale-x-[1.1]" alt="" />
                         Data Pack
                       </span>
                     {/if}
