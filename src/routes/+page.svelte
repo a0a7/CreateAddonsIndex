@@ -48,7 +48,7 @@
 
 <main class="bg-(--background) flex flex-col font-(family-name:--font-family-monospace)">
   <button on:click={toggleMode}>Toggle Mode</button>
-  <div class="md:h-[35em]">
+  <div class="md:h-[20vh]">
     <div class="relative z-0 w-full">
       <div class="w-full left-0 text-center px-10 py-6 flex flex-col justify-center">
         <h1 class="text-5xl md:text-6xl font-bold text-white title-shadow">
@@ -61,9 +61,9 @@
     </div>
   </div>
 
-  <section class="p-6 overflow-auto max-h-[40em]">
+  <section class="p-6 overflow-auto max-h-screen">
     {#if addons.length > 0}
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {#each addons as addon (addon.name)}
           <div class="p-4 bg-(--background-secondary) shadow-lg pixel-corners">
             <div class="flex flex-row gap-3">
@@ -80,25 +80,34 @@
                   {addon.name}
                   <div class="flex flex-wrap gap-1 mt-1">
                     {#if addon.modrinth_info && addon.modrinth_info.game_versions}
-                      <span class="bg-green-100 text-green-800 text-xs px-[6px] py-1 pixel-corners">
+                      <span class="bg-black/[.15] text-black dark:invert text-xs px-[6px] py-1 pixel-corners">
                         {#if addon.modrinth_info && addon.modrinth_info.game_versions}
                           {getVersionRange(addon.modrinth_info.game_versions)}
                         {/if}
                       </span>
                   {/if}
                     {#if addon.modrinth_info && addon.modrinth_info.loaders}
-                      {#each addon.modrinth_info.loaders as loader}
-                        <span class="bg-offwhite dark:bg-black text-xs px-[6px] py-1 pixel-corners">
-                          {loader}
-                        </span>
-                      {/each}
+                    {#if addon.modrinth_info.loaders.includes("fabric")}
+                      <span class="bg-blue-100 text-blue-800 text-xs px-[6px] py-1 pixel-corners">
+                        <img src="icons/fabric.svg" class="w-4 h-4 inline-block dark:invert transform scale-x-[1.1]" alt="Fabric" />
+                        Fabric
+                      </span>
                     {/if}
-
-
-                  </div>                  
+                    {#if addon.modrinth_info.loaders.includes("forge")}
+                      <span class="bg-yellow-100 text-yellow-800 text-xs px-[6px] py-1 pixel-corners">
+                        Forge
+                      </span>
+                    {/if}
+                    {#if addon.modrinth_info.loaders.includes("datapack")}
+                      <span class="bg-gray-100 text-gray-800 text-xs px-[6px] py-1 pixel-corners">
+                        Data Pack
+                      </span>
+                    {/if}
+                    {/if}
+                    </div>
               </div>
           </div>
-            <p class="text-sm mb-2">
+            <p class="text-sm mb-2 pt-2 font-sans text-bold">
               {#if addon.modrinth_info && addon.modrinth_info.description}
                 {addon.modrinth_info.description}
               {:else if addon.curseforge_info && addon.curseforge_info.description}
@@ -108,28 +117,28 @@
               {/if}
             </p>
             <div class="flex flex-row gap-2">
-            <p class="mb-1"><strong>By:</strong>
+            <p class="mb-1 font-sans font-bold">
+              <img src="icons/download.svg" class="w-4 h-4 inline-block dark:invert transform scale-x-[1.1]" alt="Downloads" />
+              {formatNumber(totalDownloads(addon))}
+            </p>  
+            <p class="mb-1 font-sans font-bold">
+              <img src="icons/person.svg" class="w-4 h-4 inline-block dark:invert transform scale-x-[1.1]" alt="Authors" />
               {#if addon.curseforge_info && addon.curseforge_info.authors}
                 {addon.curseforge_info.authors.map((a: { name: any; }) => a.name).join(', ')}
               {:else}
                 {addon.authors}
               {/if}
             </p>
-            <p class="mb-1"><strong>dl</strong>
-              {formatNumber(totalDownloads(addon))}
-            </p>
           </div>
             <div class="flex space-x-2 mt-2">
               {#if addon.modrinth_info}
                 {#if addon.modrinth_info.source_url}
                   <a href="{addon.modrinth_info.source_url}" target="_blank" title="Modrinth Source">
-                    <!-- Replace with your Modrinth Source icon -->
                     <span class="icon modrinth-source">MS</span>
                   </a>
                 {/if}
                 {#if addon.modrinth_info.wiki_url}
                   <a href="{addon.modrinth_info.wiki_url}" target="_blank" title="Modrinth Wiki">
-                    <!-- Replace with your Wiki icon -->
                     <span class="icon modrinth-wiki">W</span>
                   </a>
                 {/if}
