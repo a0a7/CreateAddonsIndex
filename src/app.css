@@ -20,17 +20,20 @@
   
     --color-white: #e4f8fd;
     --color-offwhite: #c5dae1;
-    --blue: #7592f1;
-    --lightblue: #7592f1;
+    --color-blue: #7592f1;
+    --color-lightblue: #BDCBF8;
     --gray: #1f2836;
     --dark-gray: #141823;
     --color-dark-blue: #2f3b5e;
-    --background: var(--color-dark-blue)
+    --color-dark-blue-dimmed: #232a38;
+    --background: var(--color-offwhite);
+    --background-secondary: var(--color-lightblue);
   }
   
 @layer theme {
     .dark {
-        --background: var(--color-offwhite);
+        --background: var(--color-darkblue);
+        --background-secondary: var(--color-dark-blue-dimmed);
     }
 }
 
