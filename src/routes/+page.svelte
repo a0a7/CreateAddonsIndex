@@ -10,6 +10,36 @@
     const cfDownloads = addon.curseforge_info && addon.curseforge_info.downloadCount ? addon.curseforge_info.downloadCount : 0;
     return modrinthDownloads + cfDownloads;
   }
+
+  function formatNumber(num: number): string {
+    if (num >= 1e6) {
+      return (num / 1e6).toFixed(1).replace(/\.0$/, "") + "m";
+    }
+    if (num >= 1e3) {
+      return (num / 1e3).toFixed(1).replace(/\.0$/, "") + "k";
+    }
+    return num.toString();
+  }
+
+  function getVersionRange(versions: string[]): string {
+    if (!versions || versions.length === 0) return "N/A";
+    if (versions.length === 1) return versions[0];
+    const sorted = [...versions].sort((a, b) => {
+      const pa = a.split('.').map(Number);
+      const pb = b.split('.').map(Number);
+      const len = Math.max(pa.length, pb.length);
+      for (let i = 0; i < len; i++){
+        const diff = (pa[i] || 0) - (pb[i] || 0);
+        if (diff !== 0) return diff;
+      }
+      return 0;
+    });
+    // If the lowest equals highest, just return one value.
+    return sorted[0] === sorted[sorted.length - 1]
+      ? sorted[0]
+      : `${sorted[0]} - ${sorted[sorted.length - 1]}`;
+  }
+
 </script>
 
 <svelte:head>
@@ -33,17 +63,41 @@
 
   <section class="p-6 overflow-auto max-h-[40em]">
     {#if addons.length > 0}
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5">
         {#each addons as addon (addon.name)}
-          <div class="p-4 bg-gray-800 rounded shadow-lg">
-            {#if addon.modrinth_info && addon.modrinth_info.icon_url}
-              <img src="{addon.modrinth_info.icon_url}" alt="{addon.name} Logo" class="w-16 h-16 mb-4" />
-            {:else if addon.curseforge_info && addon.curseforge_info.logo && addon.curseforge_info.logo.url}
-              <img src="{addon.curseforge_info.logo.url}" alt="{addon.name} Logo" class="w-16 h-16 mb-4" />
-            {:else}
-              <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/be/Grass_Block_%28top_texture%29_JE4_BE2.png/revision/latest?cb=20230704210148" alt="Placeholder Logo" class="w-16 h-16 mb-4" />
-            {/if}
-            <h2 class="text-2xl font-bold mb-2">{addon.name}</h2>
+          <div class="p-4 bg-(--background-secondary) shadow-lg pixel-corners">
+            <div class="flex flex-row gap-3">
+              <div class="w-16 h-16 min-w-16 pixel-corners">
+                {#if addon.modrinth_info && addon.modrinth_info.icon_url}
+                  <img src="{addon.modrinth_info.icon_url}" alt="{addon.name} Logo" class="w-16 h-16 mb-4" />
+                {:else if addon.curseforge_info && addon.curseforge_info.logo && addon.curseforge_info.logo.url}
+                  <img src="{addon.curseforge_info.logo.url}" alt="{addon.name} Logo" class="w-16 h-16 mb-4" />
+                {:else}
+                  <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/be/Grass_Block_%28top_texture%29_JE4_BE2.png/revision/latest?cb=20230704210148" alt="Placeholder Logo" class="w-16 h-16 mb-4" />
+                {/if}
+              </div>      
+              <div class="overflow-hidden whitespace-nowrap w-full inline-block text-xl font-bold">
+                  {addon.name}
+                  <div class="flex flex-wrap gap-1 mt-1">
+                    {#if addon.modrinth_info && addon.modrinth_info.game_versions}
+                      <span class="bg-green-100 text-green-800 text-xs px-[6px] py-1 pixel-corners">
+                        {#if addon.modrinth_info && addon.modrinth_info.game_versions}
+                          {getVersionRange(addon.modrinth_info.game_versions)}
+                        {/if}
+                      </span>
+                  {/if}
+                    {#if addon.modrinth_info && addon.modrinth_info.loaders}
+                      {#each addon.modrinth_info.loaders as loader}
+                        <span class="bg-offwhite dark:bg-black text-xs px-[6px] py-1 pixel-corners">
+                          {loader}
+                        </span>
+                      {/each}
+                    {/if}
+
+
+                  </div>                  
+              </div>
+          </div>
             <p class="text-sm mb-2">
               {#if addon.modrinth_info && addon.modrinth_info.description}
                 {addon.modrinth_info.description}
@@ -53,39 +107,20 @@
                 {addon.description}
               {/if}
             </p>
-            <p class="mb-1"><strong>Versions:</strong>
-              {#if addon.modrinth_info && addon.modrinth_info.game_versions}
-                {addon.modrinth_info.game_versions.join(', ')}
-              {:else}
-                N/A
-              {/if}
-            </p>
-            <p class="mb-1"><strong>Modloaders:</strong>
-              {#if addon.modrinth_info && addon.modrinth_info.loaders}
-                {addon.modrinth_info.loaders.join(', ')}
-              {:else}
-                N/A
-              {/if}
-            </p>
-            <p class="mb-1"><strong>Author(s):</strong>
+            <div class="flex flex-row gap-2">
+            <p class="mb-1"><strong>By:</strong>
               {#if addon.curseforge_info && addon.curseforge_info.authors}
                 {addon.curseforge_info.authors.map((a: { name: any; }) => a.name).join(', ')}
               {:else}
                 {addon.authors}
               {/if}
             </p>
-            <p class="mb-1"><strong>Total Downloads:</strong>
-              {totalDownloads(addon)}
+            <p class="mb-1"><strong>dl</strong>
+              {formatNumber(totalDownloads(addon))}
             </p>
-            <!-- Links section -->
+          </div>
             <div class="flex space-x-2 mt-2">
               {#if addon.modrinth_info}
-                {#if addon.modrinth_info.issues_url}
-                  <a href="{addon.modrinth_info.issues_url}" target="_blank" title="Modrinth Issues">
-                    <!-- Replace with your Modrinth Issues icon -->
-                    <span class="icon modrinth-issues">MI</span>
-                  </a>
-                {/if}
                 {#if addon.modrinth_info.source_url}
                   <a href="{addon.modrinth_info.source_url}" target="_blank" title="Modrinth Source">
                     <!-- Replace with your Modrinth Source icon -->
@@ -147,3 +182,4 @@
     {/if}
   </section>
 </main>
+
