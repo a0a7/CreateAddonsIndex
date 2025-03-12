@@ -2,23 +2,31 @@
 import fs from 'fs';
 import csvParser from 'csv-parser';
 import yaml from 'js-yaml';
+import { Curseforge } from 'node-curseforge';
 import { parse } from 'csv-parse';
 import { stringify } from 'csv-stringify';
-import path from 'path';
-import { fileURLToPath } from 'url';
 
-// Define the correct paths
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const dataDir = path.resolve(__dirname, '../data');
-const csvFilePath = path.join(dataDir, 'data.csv');
-const idsFilePath = path.join(dataDir, 'ids.json');
-const yamlFilePath = path.join(dataDir, 'addons.yaml');
+// For Node versions that do not have a global fetch (if needed):
+// import fetch from 'node-fetch';
+
+// Replace with your CurseForge API token
+// @ts-ignore
+const cf_token = process.env.CF_TOKEN || '$2a$10$/PefNYjrnbxMSy.8767InuIQ1qc7W9xfHh/NMSUMXqOceKzbH3wYS';
+const cf = new Curseforge(cf_token);
+
+// Check if the -scrape flag is passed
+const scrapeFlag = process.argv.includes('-scrape');
+
+// Read cookies from a file
+const cookiesJson = fs.readFileSync('../data/cookies.txt', 'utf-8');
+const cookiesArray = JSON.parse(cookiesJson);
+const cookies = cookiesArray.map(cookie => `${cookie.name}=${cookie.value}`).join('; ');
+let cookieIndex = 0;
 
 // Load existing IDs from a separate file
 let existingIds = {};
 try {
-  const idsJson = fs.readFileSync(idsFilePath, 'utf-8');
+  const idsJson = fs.readFileSync('../data/ids.json', 'utf-8');
   existingIds = JSON.parse(idsJson);
 } catch (err) {
   console.warn('No existing IDs file found, starting fresh.');
@@ -30,7 +38,7 @@ try {
 function getCsvData() {
   return new Promise((resolve, reject) => {
     const rows = [];
-    fs.createReadStream(csvFilePath)
+    fs.createReadStream('../data/data.csv')
       .pipe(csvParser())
       .on('data', (data) => {
         rows.push(data);
@@ -47,17 +55,70 @@ function getCsvData() {
 }
 
 /**
- * Enriches an addon with details from existing data.
+ * Enriches an addon with details from CurseForge and Modrinth if available.
  */
 async function enrichAddon(addon) {
   // Fetch CurseForge data if available
   if (addon.curseforge) {
-    console.log(`Enriching addon "${addon.name}" with existing CurseForge data.`);
+    console.log(`Enriching addon "${addon.name}" with CurseForge data.`);
 
-    let projectId = addon.curseforge_id || existingIds[addon.name];
+    try {
+      let projectId = addon.curseforge_id || existingIds[addon.name];
 
-    if (projectId) {
-      addon.curseforge_id = projectId; // Add the CurseForge ID to the addon object
+      if (!projectId && scrapeFlag) {
+        // Rotate through the list of cookies
+        const cookie = cookies[cookieIndex];
+        cookieIndex = (cookieIndex + 1) % cookies.length;
+
+        // Visit the CurseForge URL to fetch the page HTML.
+        const res = await fetch(addon.curseforge, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36',
+            'Referer': 'https://www.google.com',
+            'Cookie': cookie
+          }
+        });
+        if (!res.ok) {
+          throw new Error(`HTTP error while fetching URL: ${res.status}`);
+        }
+        const html = await res.text();
+
+        // Extract the project ID from the HTML.
+        const idMatch = html.match(/<dt>\s*Project ID\s*<\/dt>\s*<dd>\s*(\d+)\s*<\/dd>/i);
+        if (!idMatch) {
+          console.warn(`Could not extract project id from CurseForge page for addon "${addon.name}".`);
+        } else {
+          projectId = idMatch[1];
+          console.log(`Extracted project id "${projectId}" for addon "${addon.name}".`);
+        }
+      }
+
+      if (projectId) {
+        // Use the project ID with the CurseForge API.
+        const mod = await cf.get_mod(projectId);
+        console.log(`Found mod "${mod.name}" (id: ${mod.id}) for addon "${addon.name}".`);
+        const desc = await mod.get_description();
+        addon.curseforge_info = {
+          id: mod.id,
+          name: mod.name,
+          slug: mod.slug,
+          authors: mod.authors,
+          downloadCount: mod.downloadCount,
+          dateCreated: mod.dateCreated,
+          dateModified: mod.dateModified,
+          dateReleased: mod.dateReleased,
+          links: mod.links,
+          logo: mod.logo,
+          primaryCategoryId: mod.primaryCategoryId,
+          status: mod.status,
+          summary: mod.summary,
+          thumbnails: mod.thumbnails
+        };
+        addon.curseforge_id = mod.id; // Add the CurseForge ID to the addon object
+        existingIds[addon.name] = mod.id; // Save the ID to the existing IDs object
+      }
+    } catch (err) {
+      console.error(`Error fetching CurseForge data for "${addon.name}":`, err);
     }
   }
   
@@ -125,7 +186,7 @@ async function processData() {
       authors: row['Authors'],
       modrinth: row['Modrinth'] || null,
       curseforge: row['Curseforge'] || null,
-      curseforge_id: row['Curseforge ID'] || existingIds[row['Name']] || null,
+      curseforge_id: row['Curseforge ID'] || null,
       website: row['Website'] || null
     };
     return await enrichAddon(addon);
@@ -147,7 +208,7 @@ async function updateCsv(addons) {
   });
 
   const csvStringifier = stringify({ header: true });
-  const writableStream = fs.createWriteStream(csvFilePath);
+  const writableStream = fs.createWriteStream('../data/data.csv');
   csvStringifier.pipe(writableStream);
   updatedRows.forEach(row => csvStringifier.write(row));
   csvStringifier.end();
@@ -158,16 +219,16 @@ processData()
   .then((addons) => {
     const safeAddons = addons.map(addon => convertURLs(addon));
     const yamlContent = yaml.dump(safeAddons);
-    fs.writeFileSync(yamlFilePath, yamlContent, 'utf8');
-    console.log(`YAML file generated successfully at ${yamlFilePath}`);
+    fs.writeFileSync('../data/addons.yaml', yamlContent, 'utf8');
+    console.log("YAML file generated successfully at ../data/addons.yaml");
 
     // Update the CSV file with CurseForge IDs
     updateCsv(addons).then(() => {
       console.log("CSV file updated successfully with CurseForge IDs.");
 
       // Save the existing IDs to a separate file
-      fs.writeFileSync(idsFilePath, JSON.stringify(existingIds, null, 2), 'utf8');
-      console.log(`IDs file updated successfully at ${idsFilePath}`);
+      fs.writeFileSync('../data/ids.json', JSON.stringify(existingIds, null, 2), 'utf8');
+      console.log("IDs file updated successfully at ../data/ids.json");
     }).catch((err) => {
       console.error("Failed to update CSV file:", err);
     });
