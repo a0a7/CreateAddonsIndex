@@ -19,9 +19,9 @@ const scrapeFlag = process.argv.includes('-scrape');
 
 // Read cookies from a file
 // const cookiesJson = fs.readFileSync('../data/cookies.txt', 'utf-8');
-const cookiesArray = JSON.parse('{}');
-const cookies = cookiesArray.map(cookie => `${cookie.name}=${cookie.value}`).join('; ');
-let cookieIndex = 0;
+// const cookiesArray = JSON.parse('{}');
+//const cookies = cookiesArray.map(cookie => `${cookie.name}=${cookie.value}`).join('; ');
+//let cookieIndex = 0;
 
 // Load existing IDs from a separate file
 let existingIds = {};
@@ -67,8 +67,7 @@ async function enrichAddon(addon) {
 
       if (!projectId && scrapeFlag) {
         // Rotate through the list of cookies
-        const cookie = cookies[cookieIndex];
-        cookieIndex = (cookieIndex + 1) % cookies.length;
+        const cookie = "";
 
         // Visit the CurseForge URL to fetch the page HTML.
         const res = await fetch(addon.curseforge, {
