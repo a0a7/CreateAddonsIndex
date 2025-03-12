@@ -23,7 +23,7 @@
   const modloaders = ["fabric", "forge", "datapack"];
   
   // Portal action for appending elements directly to body - crucial for z-index issues
-  function portal(node) {
+  function portal(node: HTMLDivElement) {
     // This ensures the dropdown is inserted directly into the body
     document.body.appendChild(node);
     
@@ -67,27 +67,6 @@
     return sorted[0] === sorted[sorted.length - 1]
       ? sorted[0]
       : `${sorted[0]} - ${sorted[sorted.length - 1]}`;
-  }
-
-  function extractFirstFrame(url, callback) {
-    const gif = new GIF({
-      workers: 2,
-      quality: 10
-    });
-
-    gif.on('finished', function(blob) {
-      const img = new Image();
-      img.src = URL.createObjectURL(blob);
-      callback(img.src);
-    });
-
-    const img = new Image();
-    img.crossOrigin = 'Anonymous';
-    img.src = url;
-    img.onload = function() {
-      gif.addFrame(img, { copy: true, delay: 200 });
-      gif.render();
-    };
   }
 
   // Toggle selection in an array (add if not present, remove if present)
@@ -145,12 +124,12 @@
   }
 
   // Document click handler to close dropdowns when clicking outside
-  function handleClickOutside(event) {
+  function handleClickOutside(event: MouseEvent) {
     // For version dropdown
     if (showMinecraftDropdown) {
       const versionDropdown = document.querySelector('.version-dropdown');
-      const isClickInDropdown = versionDropdown && versionDropdown.contains(event.target);
-      if (versionButton && !versionButton.contains(event.target) && !isClickInDropdown) {
+      const isClickInDropdown = versionDropdown && versionDropdown.contains(event.target as Node);
+      if (versionButton && !versionButton.contains(event.target as Node) && !isClickInDropdown) {
         showMinecraftDropdown = false;
       }
     }
@@ -158,8 +137,8 @@
     // For modloader dropdown  
     if (showModloaderDropdown) {
       const modloaderDropdown = document.querySelector('.modloader-dropdown');
-      const isClickInDropdown = modloaderDropdown && modloaderDropdown.contains(event.target);
-      if (modloaderButton && !modloaderButton.contains(event.target) && !isClickInDropdown) {
+      const isClickInDropdown = modloaderDropdown && modloaderDropdown.contains(event.target as Node);
+      if (modloaderButton && !modloaderButton.contains(event.target as Node) && !isClickInDropdown) {
         showModloaderDropdown = false;
       }
     }
@@ -261,9 +240,9 @@
           <div class="relative p-4 bg-(--background-secondary) shadow-lg pixel-corners">
                     <!-- Background Mod Logo (absolute, low opacity) -->
                     {#if addon.modrinth_info && addon.modrinth_info.icon_url}
-                    <img src="{addon.modrinth_info.icon_url}" alt="{addon.name} Logo" class="absolute bottom-[-20%] right-[-20%] w-[120%] h-[120%] object-contain opacity-10 pointer-events-none blur-sm" onload={e => e.target.src = e.target.src} />
+                    <img src="{addon.modrinth_info.icon_url}" alt="{addon.name} Logo" class="absolute bottom-[-20%] right-[-20%] w-[120%] h-[120%] object-contain opacity-10 pointer-events-none blur-sm"  />
                   {:else if addon.curseforge_info && addon.curseforge_info.logo && addon.curseforge_info.logo.url}
-                    <img src="{addon.curseforge_info.logo.url}" alt="{addon.name} Logo" class="absolute bottom-[-20%] right-[-20%] w-[120%] h-[120%] object-contain opacity-10 pointer-events-none blur-sm" onload={e => e.target.src = e.target.src} />
+                    <img src="{addon.curseforge_info.logo.url}" alt="{addon.name} Logo" class="absolute bottom-[-20%] right-[-20%] w-[120%] h-[120%] object-contain opacity-10 pointer-events-none blur-sm"  />
                   {/if}
             <div class="relative flex flex-row gap-3">
               <div class="w-16 h-16 min-w-16 pixel-corners">
@@ -287,7 +266,13 @@
                         href={addon.modrinth.startsWith('http') ? addon.modrinth : "https://modrinth.com/project/" + addon.modrinth}
                         target="_blank"
                         title="View on Modrinth">
+                        <div class="outlink-icon">
                         <img src="icons/modrinth.svg" alt="Modrinth" class="w-[26px] h-[26px] invert" />
+                        <svg class="absolute -top-[5.5px] -right-[6.5px] w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#261e29" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      </div>
                       </a>
                     {/if}
                     {#if addon.curseforge_info && addon.curseforge_info.slug}
@@ -295,7 +280,13 @@
                         href={"https://www.curseforge.com/minecraft/mc-mods/" + addon.curseforge_info.slug}
                         target="_blank"
                         title="View on CurseForge">
+                        <div class="outlink-icon">
                         <img src="icons/curseforge.svg" alt="CurseForge" class="w-[26px] h-[26px] invert" />
+                        <svg class="absolute -top-[5.5px] -right-[6.5px] w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#261e29" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      </div>
                       </a>
                     {/if}
                   </div>
@@ -366,3 +357,18 @@
     {/if}
   </section>
 </main>
+
+<style>
+  .site-icon {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7492%) hue-rotate(267deg) brightness(99%) contrast(102%);
+  }
+  .outlink-icon {
+      transition: transform 0.05s ease-in;
+      position: relative;
+      text-decoration: none;
+  }
+  .outlink-icon:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+  }
+</style>
