@@ -254,7 +254,7 @@
   {/if}
   
   <!-- Addons Grid -->
-  <section class="pt-2 px-4 overflow-auto max-h-screen">
+  <section class="pt-2 px-4 overflow-auto overflow-x-clip max-h-screen">
     {#if filteredAddons.length > 0}
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {#each filteredAddons as addon (addon.name)}
@@ -281,13 +281,13 @@
                   <div class="truncate">
                     {addon.name}
                   </div>
-                  <div class="flex flex-shrink-0 space-x-2">
+                  <div class="flex flex-shrink-0 space-x-2 ">
                     {#if addon.modrinth}
                       <a
                         href={addon.modrinth.startsWith('http') ? addon.modrinth : "https://modrinth.com/project/" + addon.modrinth}
                         target="_blank"
                         title="View on Modrinth">
-                        <img src="icons/modrinth.svg" alt="Modrinth" class="w-5 h-5" />
+                        <img src="icons/modrinth.svg" alt="Modrinth" class="w-[26px] h-[26px] invert" />
                       </a>
                     {/if}
                     {#if addon.curseforge_info && addon.curseforge_info.slug}
@@ -295,7 +295,7 @@
                         href={"https://www.curseforge.com/minecraft/mc-mods/" + addon.curseforge_info.slug}
                         target="_blank"
                         title="View on CurseForge">
-                        <img src="icons/curseforge.svg" alt="CurseForge" class="w-5 h-5" />
+                        <img src="icons/curseforge.svg" alt="CurseForge" class="w-[26px] h-[26px] invert" />
                       </a>
                     {/if}
                   </div>
@@ -332,7 +332,7 @@
             </div>
 
             <!-- Description -->
-            <p class="text-sm mb-2 pt-2 font-sans font-bold">
+            <p class="text-sm mb-2 pt-2 font-sans font-bold line-clamp-2 h-[3rem] min-h-[3rem] overflow-hidden text-ellipsis">
               {#if addon.modrinth_info && addon.modrinth_info.description}
                 {addon.modrinth_info.description}
               {:else if addon.curseforge_info && addon.curseforge_info.description}
@@ -342,19 +342,20 @@
               {/if}
             </p>
 
-            <!-- Stats (Downloads & Authors) -->
-            <div class="flex flex-row gap-2">
-              <p class="mb-1 font-sans font-bold">
-                <img src="icons/download.svg" class="w-4 h-4 inline-block dark:invert transform scale-x-[1.1]" alt="Downloads" />
+            <div class="flex flex-row gap-2 w-full">
+              <p class="mb-1 font-sans font-bold whitespace-nowrap flex-shrink-0 flex items-center">
+                <img src="icons/download.svg" class="w-4 h-4 inline-block dark:invert transform scale-x-[1.1] mr-1" alt="Downloads" />
                 {formatNumber(totalDownloads(addon))}
               </p>  
-              <p class="mb-1 font-sans font-bold">
-                <img src="icons/person.svg" class="w-4 h-4 inline-block dark:invert transform scale-x-[1.1]" alt="Authors" />
-                {#if addon.curseforge_info && addon.curseforge_info.authors}
-                  {addon.curseforge_info.authors.map((a: { name: any; }) => a.name).join(', ')}
-                {:else}
-                  {addon.authors}
-                {/if}
+              <p class="mb-1 font-sans font-bold flex items-center min-w-0 flex-1">
+                <img src="icons/person.svg" class="w-4 h-4 inline-block dark:invert transform scale-x-[1.1] mr-1 flex-shrink-0" alt="Authors" />
+                <span class="truncate">
+                  {#if addon.curseforge_info && addon.curseforge_info.authors}
+                    {addon.curseforge_info.authors.map((a: { name: any; }) => a.name).join(', ')}
+                  {:else}
+                    {addon.authors}
+                  {/if}
+                </span>
               </p>
             </div>
           </div>
