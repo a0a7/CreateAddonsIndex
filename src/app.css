@@ -38,10 +38,9 @@
 }
 
   :root {    
-    --color-text: #2f3b5e;
-
-    --background: var(--white);
-    --background-dimmed: var(--offwhite);
+    --color-text: var(--white);
+    --background: #2f3b5e;
+    --background-dimmed: var(--dark-gray);
 }
 
 
@@ -90,10 +89,9 @@
         );
     }
     :root {    
-        --color-text: #2f3b5e;
-    
-        --background: var(--white);
-        --background-dimmed: var(--offwhite);
+        --color-text: var(--white);
+        --background: #2f3b5e;
+        --background-dimmed: var(--dark-gray);
     }
     
     .dark {    
