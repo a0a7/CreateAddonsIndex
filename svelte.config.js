@@ -11,7 +11,9 @@ const config = {
 		adapter: adapter(),
 		csp: {
 		  directives: {
-			'default-src': ['self'],
+			'default-src': ['self', 'unsafe-inline', 'https://cdn.modrinth.com', 'https://curseforge.com', 'https://cdn.curseforge.com'],
+			'style-src': ['self', 'unsafe-inline'],
+			'script-src': ['self', 'unsafe-inline'],
 			'img-src': ['self', 'https://cdn.modrinth.com', 'https://curseforge.com', 'https://cdn.curseforge.com', 'data:'],
 			// Add other directives as needed
 		  }
