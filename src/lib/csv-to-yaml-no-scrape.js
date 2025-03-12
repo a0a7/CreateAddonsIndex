@@ -18,7 +18,7 @@ const cf = new Curseforge(cf_token);
 const scrapeFlag = process.argv.includes('-scrape');
 
 // Read cookies from a file
-// const cookiesJson = fs.readFileSync('../data/cookies.txt', 'utf-8');
+// const cookiesJson = fs.readFileSync('src/data/cookies.txt', 'utf-8');
 // const cookiesArray = JSON.parse('{}');
 //const cookies = cookiesArray.map(cookie => `${cookie.name}=${cookie.value}`).join('; ');
 //let cookieIndex = 0;
@@ -26,7 +26,7 @@ const scrapeFlag = process.argv.includes('-scrape');
 // Load existing IDs from a separate file
 let existingIds = {};
 try {
-  const idsJson = fs.readFileSync('../data/ids.json', 'utf-8');
+  const idsJson = fs.readFileSync('src/data/ids.json', 'utf-8');
   existingIds = JSON.parse(idsJson);
 } catch (err) {
   console.warn('No existing IDs file found, starting fresh.');
@@ -38,7 +38,7 @@ try {
 function getCsvData() {
   return new Promise((resolve, reject) => {
     const rows = [];
-    fs.createReadStream('../data/data.csv')
+    fs.createReadStream('src/data/data.csv')
       .pipe(csvParser())
       .on('data', (data) => {
         rows.push(data);
@@ -207,7 +207,7 @@ async function updateCsv(addons) {
   });
 
   const csvStringifier = stringify({ header: true });
-  const writableStream = fs.createWriteStream('../data/data.csv');
+  const writableStream = fs.createWriteStream('src/data/data.csv');
   csvStringifier.pipe(writableStream);
   updatedRows.forEach(row => csvStringifier.write(row));
   csvStringifier.end();
@@ -218,16 +218,16 @@ processData()
   .then((addons) => {
     const safeAddons = addons.map(addon => convertURLs(addon));
     const yamlContent = yaml.dump(safeAddons);
-    fs.writeFileSync('../data/addons.yaml', yamlContent, 'utf8');
-    console.log("YAML file generated successfully at ../data/addons.yaml");
+    fs.writeFileSync('src/data/addons.yaml', yamlContent, 'utf8');
+    console.log("YAML file generated successfully at src/data/addons.yaml");
 
     // Update the CSV file with CurseForge IDs
     updateCsv(addons).then(() => {
       console.log("CSV file updated successfully with CurseForge IDs.");
 
       // Save the existing IDs to a separate file
-      fs.writeFileSync('../data/ids.json', JSON.stringify(existingIds, null, 2), 'utf8');
-      console.log("IDs file updated successfully at ../data/ids.json");
+      fs.writeFileSync('src/data/ids.json', JSON.stringify(existingIds, null, 2), 'utf8');
+      console.log("IDs file updated successfully at src/data/ids.json");
     }).catch((err) => {
       console.error("Failed to update CSV file:", err);
     });
