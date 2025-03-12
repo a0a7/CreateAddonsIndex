@@ -8,8 +8,15 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
-	}
+		adapter: adapter(),
+		csp: {
+		  directives: {
+			'default-src': ['self'],
+			'img-src': ['self', 'https://cdn.modrinth.com', 'https://curseforge.com', 'https://cdn.curseforge.com', 'data:'],
+			// Add other directives as needed
+		  }
+		}
+		}
 };
 
 export default config;
