@@ -18,8 +18,8 @@ const cf = new Curseforge(cf_token);
 const scrapeFlag = process.argv.includes('-scrape');
 
 // Read cookies from a file
-const cookiesJson = fs.readFileSync('../data/cookies.txt', 'utf-8');
-const cookiesArray = JSON.parse(cookiesJson);
+// const cookiesJson = fs.readFileSync('../data/cookies.txt', 'utf-8');
+const cookiesArray = JSON.parse('{}');
 const cookies = cookiesArray.map(cookie => `${cookie.name}=${cookie.value}`).join('; ');
 let cookieIndex = 0;
 
