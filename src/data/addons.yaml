@@ -133,41 +133,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/interiors
   curseforge_id: 906239
   website: null
-  curseforge_info:
-    id: 906239
-    name: 'Create: Interiors'
-    slug: interiors
-    authors:
-      - id: 103790559
-        name: syslev
-        url: https://www.curseforge.com/members/syslev
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/f3253f03-5485-455b-bf40-fa2deddfaf6b-profile_image-150x150.png
-      - id: 104837427
-        name: rdh
-        url: https://www.curseforge.com/members/rdh
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/ebe4cd89-b4f4-4cd9-adac-2f30151b4209-profile_image-150x150.png
-    downloadCount: 6060675
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/interiors
-      wikiUrl: https://sudolev.github.io/CreateInteriorsMod/
-      issuesUrl: https://github.com/sudolev/CreateInteriorsMod/issues
-      sourceUrl: https://github.com/sudolev/CreateInteriorsMod
-    logo:
-      id: 1068436
-      modId: 906239
-      title: 638602929407669140.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1068/436/256/256/638602929407669140.png
-      url: https://media.forgecdn.net/avatars/1068/436/638602929407669140.png
-    primaryCategoryId: 6484
-    status: 4
-    summary: A complement to the Create mod that adds new, functional furniture.
   modrinth_info:
     client_side: required
     server_side: required
@@ -195,7 +160,7 @@
       id: GPL-3.0-or-later
       name: GNU General Public License v3.0 only
       url: null
-    downloads: 877916
+    downloads: 877969
     followers: 383
     loaders:
       - fabric
@@ -275,39 +240,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-let-the-adventure-begin
   curseforge_id: 1007872
   website: null
-  curseforge_info:
-    id: 1007872
-    name: 'Create: Let The Adventure Begin'
-    slug: create-let-the-adventure-begin
-    authors:
-      - id: 109533069
-        name: Not_Juno
-        url: https://www.curseforge.com/members/not_juno
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/8fed7c66-90cb-45ef-8578-7299196deb96-profile_image-150x150.png
-    downloadCount: 189619
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: >-
-        https://www.curseforge.com/minecraft/mc-mods/create-let-the-adventure-begin
-      wikiUrl: ''
-      issuesUrl: https://github.com/panda-blib-blop/Create-Let-The-Adventure-Begin/issues
-      sourceUrl: https://github.com/not-jun0/Create-Let-The-Adventure-Begin
-    logo:
-      id: 1158135
-      modId: 1007872
-      title: 638726420331721627.gif
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1158/135/256/256/638726420331721627_animated.gif
-      url: https://media.forgecdn.net/avatars/1158/135/638726420331721627.gif
-    primaryCategoryId: 6484
-    status: 4
-    summary: >-
-      Create: Let The Adventure Begin adds Structures 62 unique structures, New
-      Loot, a chance to fish create mod items and much more !!!
   modrinth_info:
     client_side: optional
     server_side: required
@@ -441,48 +373,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/dynamic-village
   curseforge_id: 919759
   website: null
-  curseforge_info:
-    id: 919759
-    name: 'Create: Dynamic Village'
-    slug: dynamic-village
-    authors:
-      - id: 103790559
-        name: syslev
-        url: https://www.curseforge.com/members/syslev
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/f3253f03-5485-455b-bf40-fa2deddfaf6b-profile_image-150x150.png
-      - id: 100725747
-        name: Fatasiangamer
-        url: https://www.curseforge.com/members/fatasiangamer
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/15ae4355-a220-4434-afcb-86a7f5c16b3c-profile_image-150x150.png
-      - id: 104837427
-        name: rdh
-        url: https://www.curseforge.com/members/rdh
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/ebe4cd89-b4f4-4cd9-adac-2f30151b4209-profile_image-150x150.png
-    downloadCount: 2813720
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/dynamic-village
-      wikiUrl: ''
-      issuesUrl: https://github.com/sudolev/VillageLifeMod/issues
-      sourceUrl: https://github.com/aesefficio/DynamicVillageMod
-    logo:
-      id: 1068434
-      modId: 919759
-      title: 638602928990115218.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1068/434/256/256/638602928990115218.png
-      url: https://media.forgecdn.net/avatars/1068/434/638602928990115218.png
-    primaryCategoryId: 6484
-    status: 4
-    summary: >-
-      An expansion to Create that adds a fully-featured host of Create-mod
-      village professions.
   modrinth_info:
     client_side: required
     server_side: required
@@ -598,7 +488,7 @@
       id: GPL-3.0-only
       name: GNU General Public License v3.0 only
       url: https://choosealicense.com/licenses/gpl-3.0/
-    downloads: 31390
+    downloads: 31403
     followers: 62
     loaders:
       - fabric
@@ -652,53 +542,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-creating-space
   curseforge_id: 858897
   website: null
-  curseforge_info:
-    id: 858897
-    name: 'Create : Creating Space'
-    slug: create-creating-space
-    authors:
-      - id: 104659222
-        name: RealAntEngineer
-        url: https://www.curseforge.com/members/realantengineer
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/6270ec19-ce14-448c-a1cb-016358f97eb3-profile_image-150x150.png
-      - id: 102564120
-        name: DrapNard
-        url: https://www.curseforge.com/members/drapnard
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/ebe4cd89-b4f4-4cd9-adac-2f30151b4209-profile_image-150x150.png
-      - id: 112043845
-        name: Icicles
-        url: https://www.curseforge.com/members/icicles
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_70x70.png
-      - id: 102562924
-        name: Gameingareyou
-        url: https://www.curseforge.com/members/gameingareyou
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/75305d54-c7cc-40d1-bb9c-91fbe85943c7-profile_image-150x150.png
-    downloadCount: 516159
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-creating-space
-      wikiUrl: https://creating-space.fandom.com/wiki/Creating_Space_Wiki
-      issuesUrl: null
-      sourceUrl: https://github.com/RealAntEngineer/creating_space
-    logo:
-      id: 1066338
-      modId: 858897
-      title: 638600276043872447.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1066/338/256/256/638600276043872447.png
-      url: https://media.forgecdn.net/avatars/1066/338/638600276043872447.png
-    primaryCategoryId: 6484
-    status: 4
-    summary: >-
-      Create: Creating Space is a mod that allow you to create rocket using
-      contraptions and go to other planets.
   modrinth_info:
     client_side: required
     server_side: required
@@ -756,38 +599,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-northstar
   curseforge_id: 1071749
   website: null
-  curseforge_info:
-    id: 1071749
-    name: 'Create: Northstar'
-    slug: create-northstar
-    authors:
-      - id: 108499310
-        name: lightning2401
-        url: https://www.curseforge.com/members/lightning2401
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/8daee6d3-c036-4330-8b2c-4a4902d2439b-profile_image-150x150.png
-    downloadCount: 117514
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-northstar
-      wikiUrl: https://github.com/lightning2401/northstar/wiki
-      issuesUrl: https://github.com/lightning2401/northstar/issues
-      sourceUrl: https://github.com/lightning2401/northstar
-    logo:
-      id: 1047664
-      modId: 1071749
-      title: 638576113815221863.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1047/664/256/256/638576113815221863.png
-      url: https://media.forgecdn.net/avatars/1047/664/638576113815221863.png
-    primaryCategoryId: 412
-    status: 4
-    summary: >-
-      Inspired by Micdoodle's Galacticraft, Northstar seeks to return players to
-      the stars with the power of Create and Geckolib.
   modrinth_info:
     client_side: required
     server_side: required
@@ -816,7 +627,7 @@
       id: MIT
       name: MIT License
       url: null
-    downloads: 42334
+    downloads: 42339
     followers: 240
     loaders:
       - forge
@@ -984,36 +795,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-big-cannons
   curseforge_id: 646668
   website: null
-  curseforge_info:
-    id: 646668
-    name: Create Big Cannons
-    slug: create-big-cannons
-    authors:
-      - id: 102768428
-        name: rbasamoyai
-        url: https://www.curseforge.com/members/rbasamoyai
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/ccaae2b4-037d-4011-bcbe-56ad1a956ba5-profile_image-150x150.png
-    downloadCount: 7227457
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-big-cannons
-      wikiUrl: ''
-      issuesUrl: https://github.com/Cannoneers-of-Create/CreateBigCannons/issues
-      sourceUrl: https://github.com/Cannoneers-of-Create/CreateBigCannons
-    logo:
-      id: 1072200
-      modId: 646668
-      title: 638608031487115551.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1072/200/256/256/638608031487115551.png
-      url: https://media.forgecdn.net/avatars/1072/200/638608031487115551.png
-    primaryCategoryId: 434
-    status: 4
-    summary: Artillery engineering comes to Create
   modrinth_info:
     client_side: required
     server_side: required
@@ -1039,7 +820,7 @@
       name: ''
       url: >-
         https://github.com/Cannoneers-of-Create/CreateBigCannons/blob/0b3e23456f38bac359112d82d6aad1b5430c04d1/LICENSE.md
-    downloads: 1189057
+    downloads: 1189139
     followers: 457
     loaders:
       - fabric
@@ -1135,41 +916,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/steam-powered-create
   curseforge_id: 534610
   website: null
-  curseforge_info:
-    id: 534610
-    name: 'Create: Steam Powered (1.16/1.18/1.20)'
-    slug: steam-powered-create
-    authors:
-      - id: 100891059
-        name: yuesha_yc
-        url: https://www.curseforge.com/members/yuesha_yc
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/b19f399a-db65-47cf-ae4c-7cab505f7296-profile_image-150x150.png
-      - id: 102787001
-        name: khjxiaogu
-        url: https://www.curseforge.com/members/khjxiaogu
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/8628e3a1-4aa7-414b-89b8-aa01395e9e59-profile_image-150x150.png
-    downloadCount: 1873928
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/steam-powered-create
-      wikiUrl: ''
-      issuesUrl: https://github.com/TeamMoegMC/Steam-Powered
-      sourceUrl: https://github.com/TeamMoegMC/Steam-Powered
-    logo:
-      id: 447447
-      modId: 534610
-      title: 637706651376558818.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/447/447/256/256/637706651376558818.png
-      url: https://media.forgecdn.net/avatars/447/447/637706651376558818.png
-    primaryCategoryId: 426
-    status: 4
-    summary: Diversifying Create Mod in the Steam Age (now on 1.20/1.18)
 - name: Create Enchantment Industry
   type: Content
   description: >-
@@ -1317,43 +1063,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-new-age
   curseforge_id: 905861
   website: null
-  curseforge_info:
-    id: 905861
-    name: 'Create: New Age'
-    slug: create-new-age
-    authors:
-      - id: 31253825
-        name: nullBlade
-        url: https://www.curseforge.com/members/nullblade
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/94cd0c77-b3d5-477a-8ec1-09a1cb3f14d7-profile_image-150x150.png
-      - id: 104767147
-        name: talstoj
-        url: https://www.curseforge.com/members/talstoj
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/cdd517fe-def4-11e9-948e-784f43822e80-profile_image-150x150.png
-    downloadCount: 11543643
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-new-age
-      wikiUrl: null
-      issuesUrl: https://gitlab.com/antarcticgardens/create-new-age
-      sourceUrl: https://gitlab.com/antarcticgardens/create-new-age
-    logo:
-      id: 868983
-      modId: 905861
-      title: 638283831005466383.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/868/983/256/256/638283831005466383.png
-      url: https://media.forgecdn.net/avatars/868/983/638283831005466383.png
-    primaryCategoryId: 412
-    status: 4
-    summary: >-
-      Create: New Age is an addon for the Create mod that adds integration with
-      electricity.
   modrinth_info:
     client_side: required
     server_side: required
@@ -1379,7 +1088,7 @@
       id: BSD-3-Clause
       name: BSD 3-Clause "New" or "Revised" License
       url: null
-    downloads: 1110756
+    downloads: 1110848
     followers: 378
     loaders:
       - fabric
@@ -1575,7 +1284,7 @@
       id: LicenseRef-All-Rights-Reserved
       name: ''
       url: null
-    downloads: 1339462
+    downloads: 1339508
     followers: 849
     loaders:
       - datapack
@@ -1688,7 +1397,7 @@
       id: LicenseRef-MIT-Code-AND-ARR-Art
       name: ''
       url: null
-    downloads: 620730
+    downloads: 620766
     followers: 222
     loaders:
       - fabric
@@ -1928,7 +1637,7 @@
       id: LicenseRef-All-Rights-Reserved
       name: ''
       url: null
-    downloads: 39226
+    downloads: 39231
     followers: 137
     loaders:
       - forge
@@ -2032,7 +1741,7 @@
       id: MIT
       name: MIT License
       url: null
-    downloads: 258100
+    downloads: 258113
     followers: 155
     loaders:
       - forge
@@ -2720,36 +2429,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-stuff-additions
   curseforge_id: 466792
   website: null
-  curseforge_info:
-    id: 466792
-    name: Create Stuff & Additions
-    slug: create-stuff-additions
-    authors:
-      - id: 100003024
-        name: Furti_Two
-        url: https://www.curseforge.com/members/furti_two
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/2f2e1e34-b13c-438a-ac3a-ea11e5ba1565-profile_image-150x150.png
-    downloadCount: 15540644
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-stuff-additions
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: https://youtu.be/sxawWKuA4JM?si=kSUb6A6HDJRRpw7s
-    logo:
-      id: 1158714
-      modId: 466792
-      title: 638727221391013276.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1158/714/256/256/638727221391013276.png
-      url: https://media.forgecdn.net/avatars/1158/714/638727221391013276.png
-    primaryCategoryId: 434
-    status: 4
-    summary: 🧲  Dominate your environment with Create technology
   modrinth_info:
     client_side: required
     server_side: required
@@ -2774,7 +2453,7 @@
       id: LicenseRef-All-Rights-Reserved
       name: ''
       url: null
-    downloads: 518031
+    downloads: 518065
     followers: 256
     loaders:
       - forge
@@ -2831,36 +2510,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-misc-and-things
   curseforge_id: 652202
   website: null
-  curseforge_info:
-    id: 652202
-    name: 'Create : Misc & Things [update 6 ✓]'
-    slug: create-misc-and-things
-    authors:
-      - id: 102827187
-        name: To0pa
-        url: https://www.curseforge.com/members/to0pa
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/7f2fe880-d670-46de-9400-d54debeb84fd-profile_image-150x150.png
-    downloadCount: 5512482
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-misc-and-things
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: null
-    logo:
-      id: 873437
-      modId: 652202
-      title: 638293470247022480.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/873/437/256/256/638293470247022480.png
-      url: https://media.forgecdn.net/avatars/873/437/638293470247022480.png
-    primaryCategoryId: 426
-    status: 4
-    summary: 🔧 Add useful and fun things to Create
   modrinth_info:
     client_side: required
     server_side: required
@@ -2888,7 +2537,7 @@
       id: CC-BY-ND-4.0
       name: Creative Commons Attribution No Derivatives 4.0 International
       url: null
-    downloads: 452619
+    downloads: 452647
     followers: 251
     loaders:
       - forge
@@ -2947,7 +2596,7 @@
       id: LicenseRef-MIT-Code-AND-ARR-Art
       name: ''
       url: null
-    downloads: 702963
+    downloads: 703015
     followers: 428
     loaders:
       - fabric
@@ -3219,36 +2868,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-crystal-clear
   curseforge_id: 669724
   website: null
-  curseforge_info:
-    id: 669724
-    name: 'Create: Crystal Clear'
-    slug: create-crystal-clear
-    authors:
-      - id: 50640726
-        name: singularity_cyvack
-        url: https://www.curseforge.com/members/singularity_cyvack
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/5a351876-1219-4828-bb94-90dff663f8da-profile_image-150x150.png
-    downloadCount: 5141537
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-crystal-clear
-      wikiUrl: ''
-      issuesUrl: https://github.com/Cyvack/Crystal-Clear-Arch/issues
-      sourceUrl: https://github.com/Cyvack/Crystal-Clear-Arch
-    logo:
-      id: 601287
-      modId: 669724
-      title: 637980136211380412.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/601/287/256/256/637980136211380412.png
-      url: https://media.forgecdn.net/avatars/601/287/637980136211380412.png
-    primaryCategoryId: 424
-    status: 4
-    summary: A mod that adds glass casings to create
   modrinth_info:
     client_side: required
     server_side: required
@@ -3273,7 +2892,7 @@
       id: MIT
       name: MIT License
       url: null
-    downloads: 226814
+    downloads: 226833
     followers: 220
     loaders:
       - fabric
@@ -3349,46 +2968,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-deco
   curseforge_id: 509285
   website: null
-  curseforge_info:
-    id: 509285
-    name: Create Deco
-    slug: create-deco
-    authors:
-      - id: 102539287
-        name: talrey
-        url: https://www.curseforge.com/members/talrey
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/d8e79115-9cb3-4a92-88ac-57bf9092ef08-profile_image-150x150.png
-      - id: 100817143
-        name: OrdanaryMods
-        url: https://www.curseforge.com/members/ordanarymods
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/d31f502e-df55-4f91-89e3-25aff58fbb6c-profile_image-150x150.png
-      - id: 102018055
-        name: Kayladillo
-        url: https://www.curseforge.com/members/kayladillo
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/9fb74a65-43b9-45cb-ada3-b81a0c050da0-profile_image-150x150.png
-    downloadCount: 18520728
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-deco
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: https://github.com/talrey/CreateDeco
-    logo:
-      id: 1065338
-      modId: 509285
-      title: 638598933457608969.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1065/338/256/256/638598933457608969.png
-      url: https://media.forgecdn.net/avatars/1065/338/638598933457608969.png
-    primaryCategoryId: 426
-    status: 4
-    summary: Industrial decoration themed around the aesthetics of the Create mod.
   modrinth_info:
     client_side: required
     server_side: required
@@ -3411,7 +2990,7 @@
       id: MIT
       name: MIT License
       url: null
-    downloads: 1437393
+    downloads: 1437486
     followers: 483
     loaders:
       - fabric
@@ -3520,7 +3099,7 @@
       id: MIT
       name: MIT License
       url: null
-    downloads: 1134853
+    downloads: 1134901
     followers: 238
     loaders:
       - fabric
@@ -3578,7 +3157,7 @@
       id: MIT
       name: MIT License
       url: null
-    downloads: 129
+    downloads: 132
     followers: 6
     loaders:
       - forge
@@ -3689,36 +3268,6 @@
   curseforge: https://www.curseforge.com/minecraft/texture-packs/create-guns
   curseforge_id: 573072
   website: null
-  curseforge_info:
-    id: 573072
-    name: Create Guns
-    slug: create-guns
-    authors:
-      - id: 102980223
-        name: End_Rage
-        url: https://www.curseforge.com/members/end_rage
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/fcbae9e4-45d5-40d8-941e-082cf154d544-profile_image-150x150.png
-    downloadCount: 1728645
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/texture-packs/create-guns
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: null
-    logo:
-      id: 966389
-      modId: 573072
-      title: 638465657991860870.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/966/389/256/256/638465657991860870.png
-      url: https://media.forgecdn.net/avatars/966/389/638465657991860870.png
-    primaryCategoryId: 394
-    status: 4
-    summary: The Create mod aesthetic on MrCrayfish's Gun mod
 - name: Create Chunkloading
   type: Content
   description: >-
@@ -3729,36 +3278,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-chunkloading
   curseforge_id: 494206
   website: null
-  curseforge_info:
-    id: 494206
-    name: Create Chunkloading
-    slug: create-chunkloading
-    authors:
-      - id: 101435003
-        name: embeddedt
-        url: https://www.curseforge.com/members/embeddedt
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/901e8082-0f96-4ca3-82aa-952953e5a78f-profile_image-150x150.png
-    downloadCount: 6456840
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-chunkloading
-      wikiUrl: null
-      issuesUrl: https://github.com/embeddedt/CreateChunkloading/issues
-      sourceUrl: https://github.com/embeddedt/CreateChunkloading
-    logo:
-      id: 395165
-      modId: 494206
-      title: 637593021699632902.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/395/165/256/256/637593021699632902.png
-      url: https://media.forgecdn.net/avatars/395/165/637593021699632902.png
-    primaryCategoryId: 4843
-    status: 4
-    summary: Adds a chunkloader block that works with Create
 - name: Create Gears
   type: Discontinued
   description: >-
@@ -3803,48 +3322,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/daves-building-extended
   curseforge_id: 568645
   website: null
-  curseforge_info:
-    id: 568645
-    name: Dave's Building Extended
-    slug: daves-building-extended
-    authors:
-      - id: 51005500
-        name: Medic_Main_Dave
-        url: https://www.curseforge.com/members/medic_main_dave
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/ddee34c2-794b-4835-92e1-4b86d16a35a4-profile_image-150x150.png
-      - id: 103336666
-        name: L0rdzie
-        url: https://www.curseforge.com/members/l0rdzie
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/ead5c8b2-a4c9-4724-b1dd-9f00b46cbd3d-profile_image-150x150.png
-      - id: 101278074
-        name: srrendi
-        url: https://www.curseforge.com/members/srrendi
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/1905968f-180e-47da-9ccd-07e396c96bb9-profile_image-150x150.png
-    downloadCount: 851627
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/daves-building-extended
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: https://github.com/SpaceDave1337/dbExtended
-    logo:
-      id: 865214
-      modId: 568645
-      title: 638276200307796777.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/865/214/256/256/638276200307796777.png
-      url: https://media.forgecdn.net/avatars/865/214/638276200307796777.png
-    primaryCategoryId: 424
-    status: 4
-    summary: >-
-      More Decorations for Create! Anything from the Steam Age to the Near
-      Future!
 - name: More Mounted Storages
   type: Content
   description: >-
@@ -3855,38 +3332,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/more-mounted-storages
   curseforge_id: 546782
   website: null
-  curseforge_info:
-    id: 546782
-    name: More Mounted Storages
-    slug: more-mounted-storages
-    authors:
-      - id: 15559507
-        name: juh9870
-        url: https://www.curseforge.com/members/juh9870
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/ebe4cd89-b4f4-4cd9-adac-2f30151b4209-profile_image-150x150.png
-    downloadCount: 669518
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/more-mounted-storages
-      wikiUrl: ''
-      issuesUrl: https://github.com/juh9870/MoreMountedStorages/issues
-      sourceUrl: https://github.com/juh9870/MoreMountedStorages
-    logo:
-      id: 455426
-      modId: 546782
-      title: 637724307377345100.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/455/426/256/256/637724307377345100.png
-      url: https://media.forgecdn.net/avatars/455/426/637724307377345100.png
-    primaryCategoryId: 426
-    status: 4
-    summary: >-
-      Allows more modded storages to be used as a part of Create moving
-      contraption
 - name: 'Create: Mounted Storages'
   type: Content
   description: A fork of More Mounted Storages.
@@ -3895,37 +3340,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-mounted-storages
   curseforge_id: 715294
   website: null
-  curseforge_info:
-    id: 715294
-    name: 'Create: Mounted Storages'
-    slug: create-mounted-storages
-    authors:
-      - id: 53060715
-        name: Lgmrszd
-        url: https://www.curseforge.com/members/lgmrszd
-        avatarUrl: null
-    downloadCount: 359341
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-mounted-storages
-      wikiUrl: ''
-      issuesUrl: https://github.com/Lgmrszd/CreateMountedStorages/issues
-      sourceUrl: https://github.com/Lgmrszd/CreateMountedStorages
-    logo:
-      id: 656809
-      modId: 715294
-      title: 638056961586942423.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/656/809/256/256/638056961586942423.png
-      url: https://media.forgecdn.net/avatars/656/809/638056961586942423.png
-    primaryCategoryId: 426
-    status: 4
-    summary: >-
-      Allows more modded storages to be used as a part of Create moving
-      contraptions. Fork of "More Mounted Storages"
 - name: Create Live 3 Addon
   type: Content
   description: Used in the Create Live 3 Modpack
@@ -3934,36 +3348,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-live-3-addon
   curseforge_id: 596249
   website: null
-  curseforge_info:
-    id: 596249
-    name: Create Live 3 Addon
-    slug: create-live-3-addon
-    authors:
-      - id: 26167351
-        name: mammut53
-        url: https://www.curseforge.com/members/mammut53
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/a6d20a5a-90ae-4719-8137-df69206eaa3c-profile_image-150x150.png
-    downloadCount: 190813
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-live-3-addon
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: null
-    logo:
-      id: 527264
-      modId: 596249
-      title: 637847901769802862.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/527/264/256/256/637847901769802862.png
-      url: https://media.forgecdn.net/avatars/527/264/637847901769802862.png
-    primaryCategoryId: 426
-    status: 4
-    summary: Adds a bunch of stuff for the Create Live 3 Modpack
 - name: Create Factory
   type: Content
   description: Adds a lot of new foods to Create
@@ -3972,36 +3356,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-factory
   curseforge_id: 623265
   website: null
-  curseforge_info:
-    id: 623265
-    name: 'Create: Factory'
-    slug: create-factory
-    authors:
-      - id: 103295864
-        name: antopfr90
-        url: https://www.curseforge.com/members/antopfr90
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/e9cdb332-536a-48a2-8b33-1cb8f74bfbe5-profile_image-150x150.png
-    downloadCount: 1914741
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-factory
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: https://github.com/Antop90fr1/CreateFactory
-    logo:
-      id: 561333
-      modId: 623265
-      title: 637913426513296898.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/561/333/256/256/637913426513296898.png
-      url: https://media.forgecdn.net/avatars/561/333/637913426513296898.png
-    primaryCategoryId: 436
-    status: 4
-    summary: 🍬 A lot of new foods added to Create!
 - name: Create Automated
   type: Discontinued
   description: >-
@@ -4050,37 +3404,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-tools-and-weapons-addon
   curseforge_id: 556927
   website: null
-  curseforge_info:
-    id: 556927
-    name: 'Create: Armor and Weapons Addon'
-    slug: create-tools-and-weapons-addon
-    authors:
-      - id: 100896298
-        name: maskobi
-        url: https://www.curseforge.com/members/maskobi
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/ce57700a-def9-11e9-842d-784f43822e80-profile_image-150x150.png
-    downloadCount: 252040
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: >-
-        https://www.curseforge.com/minecraft/mc-mods/create-tools-and-weapons-addon
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: null
-    logo:
-      id: 467767
-      modId: 556927
-      title: 637750162246989499.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/467/767/256/256/637750162246989499.png
-      url: https://media.forgecdn.net/avatars/467/767/637750162246989499.png
-    primaryCategoryId: 426
-    status: 4
-    summary: Adds balanced gear to the Create Mod
 - name: Boat Contraption
   type: Discontinued
   description: |-
@@ -4091,36 +3414,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/boat-contraptions
   curseforge_id: 457180
   website: null
-  curseforge_info:
-    id: 457180
-    name: Boat Contraptions [Create Addon]
-    slug: boat-contraptions
-    authors:
-      - id: 101259850
-        name: sashafiesta
-        url: https://www.curseforge.com/members/sashafiesta
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/41780b5a-def8-11e9-94d9-784f43822e80-profile_image-150x150.png
-    downloadCount: 83866
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/boat-contraptions
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: null
-    logo:
-      id: 355250
-      modId: 457180
-      title: 637514067478083268.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/355/250/256/256/637514067478083268.png
-      url: https://media.forgecdn.net/avatars/355/250/637514067478083268.png
-    primaryCategoryId: 426
-    status: 4
-    summary: This mod allows you to make boat contraptions with the Create mod
   modrinth_info:
     client_side: required
     server_side: required
@@ -4347,38 +3640,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/big-sip
   curseforge_id: 653777
   website: null
-  curseforge_info:
-    id: 653777
-    name: Big Sip
-    slug: big-sip
-    authors:
-      - id: 13652852
-        name: possible_triangle
-        url: https://www.curseforge.com/members/possible_triangle
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/c5cf9686-a8fe-4abc-9a8f-f9567aaf11f0-profile_image-150x150.png
-    downloadCount: 2655
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/big-sip
-      wikiUrl: ''
-      issuesUrl: https://github.com/PssbleTrngle/BigSip/issues
-      sourceUrl: https://github.com/PssbleTrngle/BigSip
-    logo:
-      id: 583040
-      modId: 653777
-      title: 637949625941322156.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/583/40/256/256/637949625941322156.png
-      url: https://media.forgecdn.net/avatars/583/40/637949625941322156.png
-    primaryCategoryId: 436
-    status: 4
-    summary: >-
-      addon for the create mod introducing various drinks and other content
-      surrounding them
 - name: Liquid Burner
   type: Content
   description: >-
@@ -4389,36 +3650,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/liquid-burner
   curseforge_id: 711034
   website: null
-  curseforge_info:
-    id: 711034
-    name: Liquid Burner
-    slug: liquid-burner
-    authors:
-      - id: 102331092
-        name: Ferri_Arnus
-        url: https://www.curseforge.com/members/ferri_arnus
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/41780b5a-def8-11e9-94d9-784f43822e80-profile_image-150x150.png
-    downloadCount: 145538
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/liquid-burner
-      wikiUrl: ''
-      issuesUrl: https://github.com/ferriarnus/LiquidBurner/issues
-      sourceUrl: https://github.com/ferriarnus/LiquidBurner
-    logo:
-      id: 826317
-      modId: 711034
-      title: 638212308575782650.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/826/317/256/256/638212308575782650.png
-      url: https://media.forgecdn.net/avatars/826/317/638212308575782650.png
-    primaryCategoryId: 426
-    status: 4
-    summary: Makes the Create Blaze Burners Accept liquids
 - name: Potato Canon Plus
   type: Content
   description: Makes more food compatible with the Potato Canon.
@@ -4437,36 +3668,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/discover-addon
   curseforge_id: 657827
   website: null
-  curseforge_info:
-    id: 657827
-    name: Discover Addon
-    slug: discover-addon
-    authors:
-      - id: 43766796
-        name: Jasmine
-        url: https://www.curseforge.com/members/jasmine
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/09e75f47-56e2-42c2-b197-b40c1f8b6d89-profile_image-150x150.png
-    downloadCount: 3046
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/discover-addon
-      wikiUrl: null
-      issuesUrl: null
-      sourceUrl: https://github.com/SuperCoder7979/discover
-    logo:
-      id: 587545
-      modId: 657827
-      title: 637956668470765654.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/587/545/256/256/637956668470765654.png
-      url: https://media.forgecdn.net/avatars/587/545/637956668470765654.png
-    primaryCategoryId: 406
-    status: 4
-    summary: Create addon that adds more things to explore and process!
 - name: 'Create: Broken Bad'
   type: Content
   description: >-
@@ -4477,36 +3678,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-broken-bad
   curseforge_id: 635620
   website: null
-  curseforge_info:
-    id: 635620
-    name: 'Create: Broken Bad'
-    slug: create-broken-bad
-    authors:
-      - id: 102562833
-        name: jetpacker06
-        url: https://www.curseforge.com/members/jetpacker06
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/c985d6b9-b5ab-439b-97aa-6bc50ba67f4a-profile_image-150x150.png
-    downloadCount: 1510938
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-broken-bad
-      wikiUrl: ''
-      issuesUrl: ''
-      sourceUrl: https://github.com/jetpacker06/Create-Broken-Bad
-    logo:
-      id: 839489
-      modId: 635620
-      title: 638232569977275152.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/839/489/256/256/638232569977275152.png
-      url: https://media.forgecdn.net/avatars/839/489/638232569977275152.png
-    primaryCategoryId: 426
-    status: 4
-    summary: Adds a new field of science to Create.
 - name: Create Mechanical Extruder
   type: Content
   description: >-
@@ -4517,38 +3688,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-mechanical-extruder
   curseforge_id: 686100
   website: null
-  curseforge_info:
-    id: 686100
-    name: Create Mechanical Extruder
-    slug: create-mechanical-extruder
-    authors:
-      - id: 102682650
-        name: oierbravo_mc
-        url: https://www.curseforge.com/members/oierbravo_mc
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/ebe4cd89-b4f4-4cd9-adac-2f30151b4209-profile_image-150x150.png
-    downloadCount: 1749382
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-mechanical-extruder
-      wikiUrl: ''
-      issuesUrl: https://github.com/oierbravo/create-mechanical-extruder/issues
-      sourceUrl: https://github.com/oierbravo/create-mechanical-extruder
-    logo:
-      id: 1074275
-      modId: 686100
-      title: 638610886115901014.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1074/275/256/256/638610886115901014.png
-      url: https://media.forgecdn.net/avatars/1074/275/638610886115901014.png
-    primaryCategoryId: 412
-    status: 4
-    summary: >-
-      A mechanical extruder block. Can be used to generate any block or item
-      from adjacent blocks/fluids.
 - name: Create Ore Excavation
   type: Content
   description: Adds infinite ores and specialized drill to harvest them.
@@ -4567,43 +3706,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/industrialized-create
   curseforge_id: 622710
   website: null
-  curseforge_info:
-    id: 622710
-    name: Industrialized Create
-    slug: industrialized-create
-    authors:
-      - id: 103324886
-        name: coppertj
-        url: https://www.curseforge.com/members/coppertj
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/coppertj-profile_image-a3cf95f6578f91a9-150x150.jpeg
-      - id: 103320062
-        name: Jessesiah
-        url: https://www.curseforge.com/members/jessesiah
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/f504461d1a110c7e-profile_image-150x150.jpeg
-    downloadCount: 40888
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/industrialized-create
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: null
-    logo:
-      id: 549199
-      modId: 622710
-      title: 637885997549682223.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/549/199/256/256/637885997549682223.png
-      url: https://media.forgecdn.net/avatars/549/199/637885997549682223.png
-    primaryCategoryId: 4843
-    status: 4
-    summary: >-
-      A mod that adds more crafting recipes aimed at automation in the Create
-      Mod
 - name: 'Create: Condensed Milk'
   type: Content
   description: >-
@@ -4614,36 +3716,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/condensed-milk
   curseforge_id: 650208
   website: null
-  curseforge_info:
-    id: 650208
-    name: 'Create: Condensed Milk'
-    slug: condensed-milk
-    authors:
-      - id: 102849689
-        name: smorb42
-        url: https://www.curseforge.com/members/smorb42
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/215b7342-def9-11e9-9a66-784f43822e80-profile_image-150x150.png
-    downloadCount: 36353
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/condensed-milk
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: https://github.com/smorb42/condensedmilk
-    logo:
-      id: 579089
-      modId: 650208
-      title: 637943805569979191.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/579/89/256/256/637943805569979191.png
-      url: https://media.forgecdn.net/avatars/579/89/637943805569979191.png
-    primaryCategoryId: 4843
-    status: 4
-    summary: An addon for Create that makes Deepslate and Netherack renewable.
 - name: Expanding Technologies
   type: Content
   description: Adds railroad crossing lights
@@ -4652,43 +3724,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/expanding-technologies
   curseforge_id: 884893
   website: null
-  curseforge_info:
-    id: 884893
-    name: Expanding Technologies
-    slug: expandingtechnologies
-    authors:
-      - id: 103203587
-        name: curryducker
-        url: https://www.curseforge.com/members/curryducker
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/998f01ae-def8-11e9-b95c-784f43822e80-profile_image-150x150.png
-      - id: 102607619
-        name: LarsMans
-        url: https://www.curseforge.com/members/larsmans
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/259c8072-024b-4420-99b2-dfa5e2322834-profile_image-150x150.png
-    downloadCount: 62179
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/expandingtechnologies
-      wikiUrl: ''
-      issuesUrl: https://github.com/TeamDiopside/ExpandingTechnologies/issues
-      sourceUrl: https://github.com/TeamDiopside/ExpandingTechnologies
-    logo:
-      id: 845124
-      modId: 884893
-      title: 638242674411477092.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/845/124/256/256/638242674411477092.png
-      url: https://media.forgecdn.net/avatars/845/124/638242674411477092.png
-    primaryCategoryId: 6484
-    status: 4
-    summary: >-
-      Expanding Technologies is an addon that expands the Create mod with new
-      features!
 - name: Create more potatoes
   type: Content
   description: Adds more potato related blocks
@@ -4757,39 +3792,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/estrogen
   curseforge_id: 850410
   website: null
-  curseforge_info:
-    id: 850410
-    name: 'Create: Estrogen'
-    slug: estrogen
-    authors:
-      - id: 101761765
-        name: Mayaqq
-        url: https://www.curseforge.com/members/mayaqq
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/a7b6a714-53f8-4408-86f3-6d94b6d9f2b1-profile_image-150x150.png
-    downloadCount: 4715760
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/estrogen
-      wikiUrl: https://github.com/MayaqqDev/Estrogen/wiki
-      issuesUrl: null
-      sourceUrl: https://github.com/MayaqqDev/Estrogen
-    logo:
-      id: 1065873
-      modId: 850410
-      title: 638599603519737669.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1065/873/256/256/638599603519737669.png
-      url: https://media.forgecdn.net/avatars/1065/873/638599603519737669.png
-    primaryCategoryId: 6484
-    status: 4
-    summary: >-
-      Create Addon Based around expressing yourself, fluid handling and
-      expanding your factory. This mod adds a lot of new Items, Blocks,
-      Mechanics and more!
   modrinth_info:
     client_side: required
     server_side: required
@@ -4908,38 +3910,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-villagers-up-above
   curseforge_id: 916864
   website: null
-  curseforge_info:
-    id: 916864
-    name: 'Create: Villagerology'
-    slug: create-villagerology
-    authors:
-      - id: 102882967
-        name: abhishekrishnan
-        url: https://www.curseforge.com/members/abhishekrishnan
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/user-default-pictures-uv/ebb84563-db81-4b9c-8940-64ed33ccfc7b-profile_image-150x150.png
-    downloadCount: 127414
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-villagerology
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: null
-    logo:
-      id: 1005972
-      modId: 916864
-      title: 638527652032180852.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1005/972/256/256/638527652032180852.png
-      url: https://media.forgecdn.net/avatars/1005/972/638527652032180852.png
-    primaryCategoryId: 6484
-    status: 4
-    summary: >-
-      This is a mod addon which adds villagers and some great stuff to the
-      create mod.
 - name: 'Create: Sweets And Treats'
   type: Content
   description: >-
@@ -5037,7 +4007,7 @@
       id: MIT
       name: MIT License
       url: null
-    downloads: 238435
+    downloads: 238448
     followers: 190
     loaders:
       - fabric
@@ -5254,7 +4224,7 @@
       id: MIT
       name: MIT License
       url: null
-    downloads: 343441
+    downloads: 343478
     followers: 95
     loaders:
       - fabric
@@ -5336,36 +4306,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/create-decoration-casing
   curseforge_id: 782293
   website: null
-  curseforge_info:
-    id: 782293
-    name: Create Decoration Casing
-    slug: create-decoration-casing
-    authors:
-      - id: 16384185
-        name: TheLynkYT
-        url: https://www.curseforge.com/members/thelynkyt
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/5ce483bf-43c4-4aae-b081-d824cb81e45b-profile_image-150x150.png
-    downloadCount: 637071
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/create-decoration-casing
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: null
-    logo:
-      id: 725919
-      modId: 782293
-      title: 638078140199425591.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/725/919/256/256/638078140199425591.png
-      url: https://media.forgecdn.net/avatars/725/919/638078140199425591.png
-    primaryCategoryId: 426
-    status: 4
-    summary: Add more decoration block for Minacraft and Create Mod
 - name: 'Create: Power Loader'
   type: Content
   description: >-
@@ -5400,7 +4340,7 @@
       id: MIT
       name: MIT License
       url: https://github.com/hlysine/create_power_loader/blob/main/LICENSE
-    downloads: 369738
+    downloads: 369775
     followers: 177
     loaders:
       - forge
@@ -5528,7 +4468,7 @@
       id: AGPL-3.0-or-later
       name: GNU Affero General Public License v3.0
       url: https://github.com/hlysine/create_connected/blob/main/LICENSE
-    downloads: 474117
+    downloads: 474156
     followers: 271
     loaders:
       - forge
@@ -5670,36 +4610,6 @@
   curseforge: https://www.curseforge.com/minecraft/mc-mods/craftable-create-casings
   curseforge_id: 935720
   website: null
-  curseforge_info:
-    id: 935720
-    name: Craftable Create Casings (Forge/Fabric)
-    slug: craftable-create-casings
-    authors:
-      - id: 102925147
-        name: Lord_Of_Crumbs
-        url: https://www.curseforge.com/members/lord_of_crumbs
-        avatarUrl: >-
-          https://static-cdn.jtvnw.net/jtv_user_pictures/0354589e-321e-4c1c-9521-06608ded15f2-profile_image-150x150.png
-    downloadCount: 112531
-    dateCreated: {}
-    dateModified: {}
-    dateReleased: {}
-    links:
-      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/craftable-create-casings
-      wikiUrl: ''
-      issuesUrl: null
-      sourceUrl: null
-    logo:
-      id: 1065838
-      modId: 935720
-      title: 638599570277875021.png
-      description: ''
-      thumbnailUrl: >-
-        https://media.forgecdn.net/avatars/thumbnails/1065/838/256/256/638599570277875021.png
-      url: https://media.forgecdn.net/avatars/1065/838/638599570277875021.png
-    primaryCategoryId: 6484
-    status: 4
-    summary: Adds a recipe for Create's casings just in case-ing you need it.
 - name: Protection Pixel
   type: Content
   description: >-
@@ -5752,7 +4662,7 @@
       id: MIT
       name: MIT License
       url: https://github.com/zehmaria/createpickywheels/blob/main/LICENSE
-    downloads: 6640
+    downloads: 6641
     followers: 28
     loaders:
       - forge
@@ -5912,7 +4822,7 @@
       id: MIT
       name: MIT License
       url: null
-    downloads: 10088
+    downloads: 10093
     followers: 21
     loaders:
       - fabric
@@ -6160,7 +5070,7 @@
       id: GPL-2.0-only
       name: GNU General Public License v2.0 only
       url: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-    downloads: 63659
+    downloads: 63669
     followers: 56
     loaders:
       - forge

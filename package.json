@@ -4,9 +4,10 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
-		"prebuild": "node src/lib/csv-to-yaml-no-scrape.js",
+		"process-data": "node src/lib/csv-to-yaml-no-scrape.js",
 		"build": "vite build",
+		"prebuild": "npm run process-data",
+		"dev": "vite dev",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -15,7 +16,8 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run"
-	},
+	  },
+	
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",

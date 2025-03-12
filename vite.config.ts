@@ -5,7 +5,16 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit(), tailwindcss()],
-
+	ssr: {
+		// Tell Vite to not bundle these Node.js built-in modules
+		noExternal: ['js-yaml'], // Add other non-Node packages you want bundled
+		external: ['fs', 'path', 'url'] // Node.js built-in modules
+	  },
+	  build: {
+		rollupOptions: {
+		  external: ['fs', 'path', 'url'] // Also exclude these from client builds
+		}
+	  },	
 	test: {
 		workspace: [
 			{
