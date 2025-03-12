@@ -209,6 +209,8 @@
          class="fixed bg-(--background-secondary) shadow-xl pixel-corners min-w-32 z-[9999] version-dropdown"
          style="top: {versionDropdownY}px; left: {versionDropdownX}px;">
       {#each minecraftVersions as version}
+        <!-- svelte-ignore a11y_click_events_have_key_events -->
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
         <div class="px-4 py-2 hover:bg-(--background) font-(family-name:--font-family-monospace) cursor-pointer flex items-center" 
              onclick={() => { selectedMinecraftVersions = toggleSelection(selectedMinecraftVersions, version); }}>
           <span class="mr-2 font-(family-name:--font-family-monospace)">{selectedMinecraftVersions.includes(version) ? '✓' : ''}</span>
@@ -223,6 +225,8 @@
          class="fixed bg-(--background-secondary) shadow-lg pixel-corners z-[9999] min-w-32 modloader-dropdown"
          style="top: {modloaderDropdownY}px; left: {modloaderDropdownX}px;">
       {#each modloaders as loader}
+        <!-- svelte-ignore a11y_click_events_have_key_events -->
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
         <div class="px-4 py-2 hover:bg-(--background) cursor-pointer flex items-center font-(family-name:--font-family-monospace)"
              onclick={() => { selectedModloaders = toggleSelection(selectedModloaders, loader); }}>
           <span class="mr-2">{selectedModloaders.includes(loader) ? '✓' : ''}</span>
@@ -254,7 +258,7 @@
                   <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/be/Grass_Block_%28top_texture%29_JE4_BE2.png/revision/latest?cb=20230704210148" alt="Placeholder Logo" class="w-16 h-16 mb-4" />
                 {/if}
               </div>      
-              <div class="flex flex-col whitespace-nowrap w-full inline-block text-xl font-bold">
+              <div class="flex flex-col whitespace-nowrap w-full text-xl font-bold">
                 <!-- Header row: Name + Icon Links -->
                 <div class="flex items-center justify-between">
                   <div class="truncate">
@@ -356,12 +360,23 @@
       <p class="text-center">No addons available.</p>
     {/if}
   </section>
+  <!-- Buttons for Contact and Submit Addon -->
+<div class="flex justify-center mt-4 space-x-4 pb-4 pt-4">
+  <a href="/contact" class="px-4 py-2 bg-(--background-secondary) text-white font-bold pixel-corners shadow hover:contrast-[110%]  transition duration-200">
+    Contact
+  </a>
+  <a href="/contact" class="px-4 py-2 bg-(--background-secondary) text-white font-bold pixel-corners shadow hover:contrast-[110%]  transition duration-200">
+    Submit Addon
+  </a>
+</div>
+<div>
+  <p class="text-center text-md pb-5 text-(--background-secondary) contrast-125 shadow-xl">
+    <a href="https://github.com/a0a7/CreateAddonsIndex" class="text-(--background-secondary)">Create Addons Index</a> v1.1 Copyright {new Date().getFullYear()} lev. Last updated {new Date().toLocaleDateString("ja-JP")}
+  </p>
+</div>
 </main>
 
 <style>
-  .site-icon {
-      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7492%) hue-rotate(267deg) brightness(99%) contrast(102%);
-  }
   .outlink-icon {
       transition: transform 0.05s ease-in;
       position: relative;
