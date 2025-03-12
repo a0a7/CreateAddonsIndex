@@ -17,9 +17,6 @@ importers:
       csv-stringify:
         specifier: ^6.5.2
         version: 6.5.2
-      fs:
-        specifier: 0.0.1-security
-        version: 0.0.1-security
       gif.js:
         specifier: ^0.2.0
         version: 0.2.0
@@ -63,9 +60,6 @@ importers:
       '@types/js-yaml':
         specifier: ^4.0.9
         version: 4.0.9
-      eslint:
-        specifier: ^9.18.0
-        version: 9.22.0(jiti@2.4.2)
       eslint-config-prettier:
         specifier: ^10.0.1
         version: 10.1.1(eslint@9.22.0(jiti@2.4.2))
@@ -1591,9 +1585,6 @@ packages:
   form-data@4.0.2:
     resolution: {integrity: sha512-hGfm/slu0ZabnNt4oaRZ6uREyfCj6P4fT/n6A1rGV+Z0VdGXjfOhVUpkn6qVQONHGIFwmveGXyDs75+nr6FM8w==}
     engines: {node: '>= 6'}
-
-  fs@0.0.1-security:
-    resolution: {integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==}
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -3802,8 +3793,6 @@ snapshots:
       combined-stream: 1.0.8
       es-set-tostringtag: 2.1.0
       mime-types: 2.1.35
-
-  fs@0.0.1-security: {}
 
   fsevents@2.3.3:
     optional: true
