@@ -13,7 +13,7 @@ const config = {
 		  directives: {
 			'default-src': ['self', 'unsafe-inline', 'https://cdn.modrinth.com', 'https://curseforge.com', 'https://cdn.curseforge.com'],
 			'style-src': ['self', 'unsafe-inline'],
-			'script-src': ['self', 'unsafe-inline'],
+			'script-src': ['self', 'unsafe-inline', 'https://pagead2.googlesyndication.com'],
 			'img-src': ['self', 'https://cdn.modrinth.com', 'https://curseforge.com', 'https://cdn.curseforge.com', 'data:'],
 			// Add other directives as needed
 		  }

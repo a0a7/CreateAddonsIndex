@@ -145,6 +145,7 @@
   }
   
   onMount(() => {
+    (adsbygoogle = window.adsbygoogle || []).push({});
     document.addEventListener('click', handleClickOutside);
     return () => {
       document.removeEventListener('click', handleClickOutside);
@@ -159,7 +160,14 @@
 <main class="bg-(--background) bg-checker flex flex-col font-(family-name:--font-family-monospace)">
   <!-- Header Section -->
   <div class="md:h-[20vh]">
-    <div class="relative z-0 w-full">
+    <div><ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-2623535512589719"
+      data-ad-slot="9222187815"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+ </div>
+    <div class="relative z-0 max-w-2/3">
       <div class="w-full left-0 text-center px-10 py-6 flex flex-col justify-center">
         <h1 class="text-5xl md:text-6xl font-bold text-white title-shadow">
           Create Addons
@@ -172,7 +180,7 @@
   </div>
 
   <!-- Filter/Sort Bar -->
-  <div class="overflow-visible p-2 bg-(--background-secondary) shadow-lg pixel-corners mb-2 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 mx-4">
+  <div class="overflow-visible p-2 text-white bg-(--background-secondary) shadow-lg pixel-corners mb-2 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 mx-4">
     <div class="flex flex-wrap items-center gap-4 overflow-visible">
       <!-- Minecraft Version Filter -->
       <div class="relative ">
@@ -206,7 +214,7 @@
   <!-- Dropdowns with portal to avoid stacking context issues -->
   {#if showMinecraftDropdown}
     <div use:portal 
-         class="fixed bg-(--background-secondary) shadow-xl pixel-corners min-w-32 z-[9999] version-dropdown"
+         class="text-white fixed bg-(--background-secondary) shadow-xl pixel-corners min-w-32 z-[9999] version-dropdown"
          style="top: {versionDropdownY}px; left: {versionDropdownX}px;">
       {#each minecraftVersions as version}
         <!-- svelte-ignore a11y_click_events_have_key_events -->
@@ -222,7 +230,7 @@
 
   {#if showModloaderDropdown}
     <div use:portal
-         class="fixed bg-(--background-secondary) shadow-lg pixel-corners z-[9999] min-w-32 modloader-dropdown"
+         class="text-white fixed bg-(--background-secondary) shadow-lg pixel-corners z-[9999] min-w-32 modloader-dropdown"
          style="top: {modloaderDropdownY}px; left: {modloaderDropdownX}px;">
       {#each modloaders as loader}
         <!-- svelte-ignore a11y_click_events_have_key_events -->
@@ -237,7 +245,7 @@
   {/if}
   
   <!-- Addons Grid -->
-  <section class="pt-2 px-4 overflow-auto overflow-x-clip max-h-screen">
+  <section class="text-white pt-2 px-4 overflow-auto overflow-x-clip max-h-screen">
     {#if filteredAddons.length > 0}
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {#each filteredAddons as addon (addon.name)}
