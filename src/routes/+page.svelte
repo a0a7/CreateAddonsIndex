@@ -159,15 +159,8 @@
 
 <main class="bg-(--background) bg-checker flex flex-col font-(family-name:--font-family-monospace)">
   <!-- Header Section -->
-<div class="md:h-[20vh]">
-    <!--<div><ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-2623535512589719"
-      data-ad-slot="9222187815"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>
- </div>-->
-    <div class="relative z-0 max-w-2/3">
+<div class="md:h-[20vh] w-full items-center justify-center ">
+    <div class="relative mx-auto z-0 max-w-2/3">
       <div class="w-full left-0 text-center px-10 py-6 flex flex-col justify-center">
         <h1 class="text-5xl md:text-6xl font-bold text-white title-shadow">
           Create Addons
